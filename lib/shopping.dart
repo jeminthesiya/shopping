@@ -130,9 +130,12 @@ class _shoppingState extends State<shopping> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Image.asset(
-              "${image}",
-              fit: BoxFit.fill,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                "${image}",
+                fit: BoxFit.fill,
+              ),
             ),
             Align(
               alignment: Alignment.topLeft,
